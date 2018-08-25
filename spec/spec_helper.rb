@@ -94,3 +94,12 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+
+def se_connecter_comme_admin
+  AdminUser.create(email: 'admin@example.fr', password: 'password')
+  visit '/admin'
+  fill_in 'admin_user_email'.to_sym, with: 'admin@example.fr'
+  fill_in 'admin_user_password'.to_sym, with: 'password'
+  click_on 'Login'
+end
