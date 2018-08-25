@@ -33,7 +33,6 @@ group :development, :test do
   gem 'factory_bot'
   gem 'capybara'
   gem 'launchy'
-  gem 'sqlite3'
 end
 
 group :development do
