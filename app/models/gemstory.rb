@@ -1,0 +1,2 @@
+class Gemstory < ApplicationRecord
+end
