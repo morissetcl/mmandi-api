@@ -1,3 +1,3 @@
 class GemstorySerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :title, :summerize, :link, :image
 end
