@@ -6,11 +6,13 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
+gem 'carrierwave', '~> 1.0'
 # ActiveAdmin
 gem 'devise'
 gem 'activeadmin'
 gem 'pg'
 gem 'rack-cors', require: 'rack/cors'
+gem 'cloudinary'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -35,6 +37,7 @@ group :development, :test do
   gem 'factory_bot'
   gem 'capybara'
   gem 'launchy'
+  gem 'dotenv-rails'
 end
 
 group :development do
