@@ -13,6 +13,7 @@ gem 'activeadmin'
 gem 'pg'
 gem 'rack-cors', require: 'rack/cors'
 gem 'cloudinary'
+gem 'ransack', github: 'activerecord-hackery/ransack'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
