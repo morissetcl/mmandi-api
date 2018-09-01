@@ -1,5 +1,5 @@
 ActiveAdmin.register Article do
-  permit_params :title, :summerize, :link, :image, :created_at
+  permit_params :title, :summerize, :link, :image, :created_at, :tags
 
   form do |f|
     f.inputs do
@@ -7,6 +7,7 @@ ActiveAdmin.register Article do
       f.input :summerize
       f.input :image
       f.input :link
+      f.input :tags
       f.input :created_at, as: :date_picker
     end
     f.actions
@@ -20,6 +21,7 @@ ActiveAdmin.register Article do
         image_tag(article.image.url) if article.image.present?
       end
       row :link
+      row :tags
     end
   end
 end
