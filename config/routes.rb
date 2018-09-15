@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :articles
   resources :gemstories
+  resources :emails
 end
